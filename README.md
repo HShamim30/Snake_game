@@ -1,45 +1,119 @@
-﻿# Snake_game
-# 🐍 Snake Game – Premium Edition
+# 🐍 Snake Game using Python (Pygame)
 
-An advanced Snake Game built using **Python** and **Pygame**, demonstrating practical implementation of **Data Structures and Algorithms (DSA)** with a modern UI and sound effects.
+## 📌 Project Title
+Snake Game – Data Structure Mini Project
 
 ---
 
-## 📌 Features
+## 📝 Description
+This project is a classic Snake Game developed using **Python** and the **Pygame** library.
+The game demonstrates the practical use of **data structures**, real-time game logic,
+event handling, and file handling to store the high score.
 
-- 🎮 Interactive Snake gameplay
-- 🧠 DSA concepts (Array, Queue, Collision Detection)
-- 🍎 Food eating with score increment
-- 🔊 Sound effects (Eat & Game Over)
-- 💾 High score saved using file handling
-- ⏸ Pause / Resume functionality
-- 🎨 Premium UI with gradient background
-- 📦 GitHub & college-project ready
+The player controls the snake using keyboard arrow keys.
+The objective is to eat food, increase the score, and avoid collisions with the wall
+or the snake’s own body.
 
 ---
 
 ## 🧠 Data Structure Concepts Used
-
-- **Array (List in Python)** – To store snake body segments  
-- **Queue (FIFO Logic)** – Head insertion & tail deletion  
-- **Collision Detection** – Snake-food, wall, and self collision  
-- **Time-based Movement** – Smooth speed control independent of FPS  
+- **List**: To store snake body segments
+- **Queue (FIFO behavior)**: Snake movement logic
+- **Loops & Conditions**: Game flow control
+- **File Handling**: Saving and loading high score
 
 ---
 
-## 🛠 Technologies Used
+## 🎯 Objectives
+- To develop a real-time game using Python
+- To apply data structure concepts in a practical project
+- To understand collision detection and event handling
+- To store and retrieve game data (high score)
 
-- Python 3.x
+---
+
+## 🛠️ Technologies Used
+- Python 3.12
 - Pygame Library
+- PyInstaller (for creating EXE file)
 
 ---
 
-## ▶ How to Run the Project
+## 🎮 Game Features
+- Smooth snake movement
+- Random food generation
+- Score and high score display
+- Sound effects on food eat and game over
+- Game Over screen
 
-### 1️⃣ Install Python  
-Download from: https://www.python.org/
+---
 
-### 2️⃣ Install Pygame
+## 📂 Project Structure
+SNAKE_GAME_DSA/
+│
+├── Snake_game.py # Main game source code
+├── eat.wav # Sound when snake eats food
+├── gameover.wav # Sound on game over
+├── highscore.txt # File to store high score
+├── README.md # Project documentation
+└── dist/
+└── Snake_game.exe # Executable game file
+
+yaml
+Copy code
+
+---
+
+## ▶️ How to Install and Run the Game
+
+### 🔹 Method 1: Run Using Python (Developer Mode)
+
+#### Step 1: Install Python
+Download and install **Python 3.12** from:
+https://www.python.org/downloads/
+
+✔️ Make sure **Add Python to PATH** is selected during installation.
+
+#### Step 2: Install Pygame
+Open Command Prompt or VS Code Terminal and run:
 ```bash
-pip install pygame
+python -m pip install pygame
+Step 3: Run the Game
+bash
+Copy code
+python Snake_game.py
+🔹 Method 2: Run Using EXE File (No Python Required)
+✔️ Python installation is NOT required
+✔️ Suitable for end users and college submission
 
+Steps:
+Open the project folder
+
+Navigate to the dist folder
+
+Double-click on:
+
+Copy code
+Snake_game.exe
+🎉 The game will start automatically.
+
+🎮 Game Controls
+⬆️ Arrow Up – Move Up
+
+⬇️ Arrow Down – Move Down
+
+⬅️ Arrow Left – Move Left
+
+➡️ Arrow Right – Move Right
+
+📍 EXE File Location
+Copy code
+dist/Snake_game.exe
+🧪 Output
+Snake grows after eating food
+
+Score increases continuously
+
+High score is saved even after restarting the game
+
+Game ends when snake hits the wall or itself
